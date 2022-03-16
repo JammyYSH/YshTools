@@ -7,7 +7,7 @@
 //
 
 #import "YSHViewController.h"
-
+#import "GFButton.h"
 @interface YSHViewController ()
 
 @end
@@ -18,12 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    GFButton *btn = [GFButton buttonWithType:UIButtonTypeCustom];
+    btn.imagePosition = GFUIButtonImagePositionRight;
+    [btn setTitle:@"test" forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"study_coin"] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(100, 100, 100, 30);
+    
+    [self.view addSubview:btn];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

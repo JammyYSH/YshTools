@@ -1,0 +1,16 @@
+PODS:
+  - YshTools (0.1.0)
+
+DEPENDENCIES:
+  - YshTools (from `../`)
+
+EXTERNAL SOURCES:
+  YshTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YshTools: b540fd620b0419573f5a652380b7977695fd7488
+
+PODFILE CHECKSUM: 6c4baad18b3ada00102fe2136ae202698fb842e0
+
+COCOAPODS: 1.11.2
